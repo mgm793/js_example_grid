@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --grid-color: black;
+  --grid-gap: 2px;
+  --grid-size: 6;
+}
+
+.app{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid{
+  display: grid;
+  grid-gap: var(--grid-gap);
+  background-color: var(--grid-color);
+  grid-template-columns: repeat(var(--grid-size), 30px);
+  grid-template-rows: repeat(var(--grid-size), 30px);
+  border: var(--grid-gap) solid var(--grid-color);
+}
+
+.square{
+  background-color: white;
+}
+
+.drawn{
+  background-color: lightblue;
+}
